@@ -4,7 +4,7 @@
         "aws_access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
         "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
         "region":         "us-east-1",
-        "baseimage":       "ami-02521d90e7410d9f0",
+        "baseimage":       "ami-020cba7c55df1f615",
         "efsid": "" 
     },
     "builders": [
@@ -14,11 +14,11 @@
             "instance_type": "t2.micro",
             "region": "us-east-1",
             "secret_key": "{{user `aws_secret_key`}}",
-            "source_ami": "ami-02521d90e7410d9f0",
+            "source_ami": "ami-020cba7c55df1f615",
             "ssh_username": "ubuntu",
             "temporary_key_pair_type": "ed25519",
             "type": "amazon-ebs",
-            "security_group_id": "sg-0a781bd43a7ce089e"
+            "security_group_id": "sg-0327e8b83cf57b213"
         }
     ],
   "provisioners": [
