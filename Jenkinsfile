@@ -32,7 +32,7 @@ stages{
                     // Print the AMI ID to check
                     echo "Latest AMI ID: ${amiId}"
                     // Run the trivy scan using the captured AMI ID
-                    sh "/usr/bin/trivy vm --scanners vuln ami:${amiId} --aws-region ap-south-1"
+                    sh "/usr/bin/trivy vm --scanners vuln ami:${amiId} --aws-region us-east-1"
                 }
             }
         }
