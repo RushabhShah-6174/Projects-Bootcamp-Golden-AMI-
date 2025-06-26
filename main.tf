@@ -4,7 +4,7 @@
 #---------------------------------------------#
 
 provider "aws" {
-  region = "ap-south-1"
+  region = "us-east-1"
 }
 
 data "aws_efs_file_system" "myefs" {
